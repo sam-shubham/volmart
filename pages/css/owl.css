@@ -1,0 +1,77 @@
+.owl-dot.active > span {
+  background: rgb(82, 255, 82) !important;
+}
+.owl-dot:hover span {
+  background-color: rgb(84, 117, 177) !important;
+}
+.owl-dots {
+  /* display: block; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.8rem;
+}
+/* .owl-dots {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2.5rem;
+} */
+.owl-nav {
+  display: flex;
+  width: 100% !important;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%) !important;
+  /* transform: translateY(50%) translateX(-20px) !important; */
+  pointer-events: none;
+}
+.owl-prev-custom{
+  pointer-events: auto;
+  transform: translateX(10px);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.owl-next-custom{
+  pointer-events: auto;
+  transform: translateX(-10px);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+.owl-prev-custom:hover > svg {
+  filter: invert();
+}
+.owl-next-custom:hover > svg {
+  filter: invert();
+}
+.owl-prev-custom:hover {
+  background-color: rgb(198, 246, 255) !important;
+}
+.owl-prev-custom {
+  background-color: rgb(255, 249, 198) !important;
+  color: black !important;
+  padding: 2.2rem 1rem !important;
+  transition: 0.5s;
+}
+.owl-next-custom:hover {
+  background-color: rgb(198, 246, 255) !important;
+  color: black !important;
+}
+.owl-next-custom {
+  transition: 0.5s;
+  color: black !important;
+  background-color: rgb(255, 249, 198) !important;
+  padding: 2.2rem 1rem !important;
+}
+.owl-nav .disabled {
+  opacity: 0.3 !important;
+}
+.owl-next:hover {
+  background-color: transparent !important;
+}
+.owl-prev:hover {
+  background-color: transparent !important;
+}

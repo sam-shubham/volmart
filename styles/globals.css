@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -10,7 +13,17 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
+:root {
+  --primarycolor: rgba(212, 126, 14, 0.452);
+  --s: 200px;
+  --_g: #000 calc(var(--s) * 0.433), #0000 calc(var(--s) * 0.44);
+}
+/* @font-face {
+  font-family: bristone;
+  src: url(../fonts/Bristone.ttf);
+} */

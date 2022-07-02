@@ -1,0 +1,113 @@
+/* //Navbar Design */
+.btn12 {
+  text-align: center;
+  display: inline-block;
+  padding: 5px 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.btn12:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background: #fff;
+  left: 45%;
+  height: 2px;
+  bottom: 0;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+.btn12:hover:before,
+.btn12.active::before {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  left: 0;
+}
+.btn12.active {
+  color: blue;
+}
+
+/* //Navbar Design */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  height: 3.77rem;
+  margin-bottom: 0.5rem;
+}
+.innernavbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--primarycolor);
+  padding: 1rem 10px;
+  position: fixed;
+  z-index: 999;
+  backdrop-filter: blur(2px);
+}
+.Navitems {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  list-style: none;
+  margin-left: 1rem;
+  font-family: Staatliches;
+}
+.innernavforrearrange {
+  display: flex;
+  align-items: center;
+}
+.Navitems > li {
+  display: flex;
+}
+.Navitems > li > a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+.Navitems > li > a:hover {
+  color: blue;
+}
+.innernavbar > div > div > h3 {
+  font-size: 1.3rem;
+}
+.line {
+  transition: 0.5s;
+}
+.hamburgerlines .hamburdercheck:checked ~ .line1 {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburgerlines .hamburdercheck:checked ~ .line3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.hamburgerlines .hamburdercheck:checked ~ .line2 {
+  transform: scale(0);
+}
+
+@media only screen and (max-width: 600px) {
+  .divhamburder {
+    display: block;
+  }
+  .Navitems {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primarycolor);
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    position: absolute;
+    margin-left: 0px;
+    top: 100%;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+  }
+  .navbartitleitem {
+    font-size: medium;
+  }
+}

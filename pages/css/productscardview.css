@@ -1,0 +1,14 @@
+.outer-products-cards {
+  margin: 1rem;
+}
+.header-product-cards-view > h3 {
+  padding: 0.7rem;
+}
+.inner-products-cards {
+  background-color: #fff;
+  border-radius: 3px;
+}
+.owl_crousel-view-for-products {
+  margin-top: 5px;
+  margin-left: 3px;
+}
