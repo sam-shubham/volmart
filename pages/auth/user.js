@@ -2,9 +2,9 @@ import React, { useEffect, useContext } from "react";
 import logo from "./Login_img.png";
 import $ from "jquery";
 // import { useNavigate } from "react-router-dom";
-import { validateform } from "../jsTool/formvalidate";
+import { validateform } from "../../jsTool/formvalidate";
 import { User } from "../../context/allcontexts";
-import { checkemail } from "../jsTool/validateEmail";
+import { checkemail } from "../../jsTool/validateEmail";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
