@@ -8,7 +8,7 @@ import { checkemail } from "../jsTool/validateEmail";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-const getUser = () => {
+const GetUser = () => {
   const router = useRouter();
   let user = useContext(User);
   // let navi = useNavigate();
@@ -278,4 +278,4 @@ const getUser = () => {
   );
 };
 
-export default getUser;
+export default GetUser;
